@@ -1,0 +1,76 @@
+<%= content_for :title, "À propos" %>
+<%= stylesheet_link_tag 'a_propos.css'%>
+
+
+<div class="container">
+	<header>
+		<div id="header">
+			<div id="logo_header">Lloyd WESTBURY</div>
+			<div id="ham-container">
+				<div id="ham_menu">
+					<div class="bar bar1"></div>
+					<div class="bar bar2"></div>
+					<div class="bar bar3"></div>
+				</div>
+			</div>
+		</div>
+		<div id="ham_list">
+			<ul>
+				<li class='list'><a href='<%= a_propos_path %>' class='active'>À propos</a></li>
+				<li class='list'><a href='#'>Mon CV</a></li>
+				<li class='list'><a href='<%= mes_realisations_path %>'>Mes réalisations</a></li>
+				<li class='list'><a href='<%= contact_path %>'>Contact</a></li>
+			</ul>
+		</div>
+	</header>
+	<section>
+		<h3>À propos de moi</h3>
+		<div class='section-container'>
+			<article class="text-container">
+				<p>
+					Je m'appelle Lloyd WESTBURY, j'ai 26 ans et j'habite à Bordeaux.<br>
+					Je suis titulaire d'un diplôme d'ingénieur en génie des systèmes industriels.<br>
+					<br>
+					J'ai toujours été intéressé par le développement web mais je n'avais jamais envisagé d'en faire mon métier.<br>
+					Après mes études j'ai décidé de me lancer et je me suis tourné vers une formation de 12 semaines qui m'a permis d'acquérir des bases solides dans ce domaine.<br>
+					Je me suis découvert une passion pour le développement web, j'aime expérimenter, découvrir et apprendre des nouvelle choses, j'ai donc continué de me former afin d'avoir un niveau me permettant d'offrir des prestations professionnelles.<br>
+				</p><br>
+				<p>Les technologies que j'utilise :</p>
+				<ul>
+					<li>Ruby on Rails (côté serveur)</li>
+					<li>HTML 5 / CSS 3</li>
+					<li>JQuery / Javascript</li>
+					<li> Bootstrap 4</li>
+					<li>Postrgresql (base de donnée)</li>
+					<li>Ajax</li>
+				</ul>
+				<p><br>
+					Je suis également devenu très friand des sites qui proposent des exercices de développement et permettent d'améliorer son résonnement tel que CodeWars.
+				</p>
+				<div class="cv-link-container">
+					<p>
+						<a href='#' class='voir-cv btn'>Télécharger mon CV</a>
+					</p>
+				</div>
+				<div class="social-container">
+					<p>
+						Retrouvez moi sur :
+					</p>
+					<div class="social-icons">
+						<a href="https://github.com/LloydWes" target='_blank'><%= image_tag 'github.png' %></a>
+						<a href="https://www.linkedin.com/in/lloydwestbury/" target='_blank'><%= image_tag'linkedin(1).png' %></a>
+						<a href="https://www.codewars.com/users/LloydTHP" target='_blank'><%= image_tag '687474703a2f2f7777772e736f66746c61622e6e7475612e67722f7e6e69636b69652f696d616765732f6c6f676f2f636f6465776172732e706e67.png' %></a>
+					</div>
+				</div>
+			</article>
+			<aside>
+				<%= image_tag 'RSCN2363.JPG' %>
+			</aside>
+		</div>
+	</section>
+
+	<footer>
+		<div class="copy-right">&copy; <span id='cpr'>Copyright</span> 2019 Lloyd Westbury</div>
+	</footer>
+</div>
+

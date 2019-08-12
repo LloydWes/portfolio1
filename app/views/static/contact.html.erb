@@ -1,0 +1,52 @@
+<% content_for :title, "Contact" %>
+<%= stylesheet_link_tag 'contact.css'%>
+
+<div class="container">
+	<header>
+		<div id="header">
+			<div id="logo_header">Lloyd WESTBURY</div>
+			<div id="ham-container">
+				<div id="ham_menu">
+					<div class="bar bar1"></div>
+					<div class="bar bar2"></div>
+					<div class="bar bar3"></div>
+				</div>
+			</div>
+		</div>
+		<div id="ham_list">
+			<ul>
+				<li class='list'><a href='<%= a_propos_path %>'>À propos</a></li>
+				<li class='list'><a href='#'>Mon CV</a></li>
+				<li class='list'><a href='<%= mes_realisations_path %>'>Mes réalisations</a></li>
+				<li class='list'><a href='<%= contact_path %>' class='active'>Contact</a></li>
+			</ul>
+		</div>
+	</header>
+	<section>
+		<h3>Contact</h3>
+		<div class="section-container">
+			<form>
+				<div class="form-container">
+					<label>Votre nom (facultatif) :</label>
+					<input type="text" name="nom">
+				</div>
+				<div class="form-container">
+					<label>Votre adresse email :</label>
+					<input type="text" name="email">
+				</div>
+				<div class="form-container">
+					<label>Votre message :</label>
+					<textarea></textarea>
+				</div>
+				<input class='submit btn' type="submit" name="" value='Envoyer'>
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<div class="copy-right">&copy; <span id='cpr'>Copyright</span> 2019 Lloyd Westbury</div>
+	</footer>
+</div>
+<script type="text/javascript" src='menu.js'></script>
+
+
