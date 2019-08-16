@@ -227,13 +227,13 @@ footer div span{
 		margin: 5px 5px 5px 5px;
 	}
 	#ham_list{
-		height: 0px;
+		max-height: 0px;
 		width: 100%;
 		top: 60px;
 		left: 0;
 		align-self: end;
 		overflow: hidden;
-		transition:height 0.4s;
+		transition:max-height 0.4s ease-in-out;
 	}
 	.bar{
 		width: 30px;
@@ -253,7 +253,7 @@ footer div span{
 		transform: rotateZ(-45deg) translate(7px, -6px);
 	}
 	#ham_list.change{
-		height: auto;
+		max-height: 200em;
 		overflow: auto;
 	}
 }
