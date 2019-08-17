@@ -4,14 +4,15 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <!-- application -->
-    <%= stylesheet_link_tag 'gen.css', type: 'text/css' %>
+    <%= stylesheet_link_tag 'gen.css', media: 'all', 'data-turbolinks-track': 'reload', type: 'text/css' %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%#= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'menu', 'data-turbolinks-track': 'reload', type: 'text/javascript' %>
     <!-- /application -->
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', type: 'text/javascript' %>
   </head>
 
   <body>
     <%= yield %>
+
   </body>
 </html>
